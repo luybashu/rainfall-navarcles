@@ -36,48 +36,6 @@ pip install -r requirements.txt
 
 ---
 
-
-## Forecasting Summary
-The best-performing model was **Auto-ARIMA**, achieving a test MAE of 29.19 mm.
-
-| Model          | Avg. MAE (CV) |
-|----------------|---------------|
-| **Auto-ARIMA** | **29.35**     |
-| Prophet        | 29.72         |
-| SARIMA         | 32.80         |
-| SARIMAX        | 30.63         |
-| LightGBM       | 30.98         |
-| CatBoost       | ~31.12        |
-| Constant Model | ~31.00        |
-
-> Final test MAE of Auto-ARIMA: **29.19 mm**
-
----
-
-## Dashboard Preview
-
-The interactive Tableau dashboard includes:
-
-- **Annual Analysis**:
-  - Mean annual rainfall
-  - Rainiest/driest years
-  - Longest wet/dry periods
-
-- **Monthly View**:
-  - Number of rainy days
-  - Monthly extremes and totals
-
-- **Snowfall Tracking**:
-  - Historical snow event logs
-
-- **User Controls**:
-  - Filter by year or month
-  - Explore trends with dropdowns and charts
-
-> Open `Dashboard_Navarcles.twbx` with **Tableau Desktop Public Edition (v2022.3+)**
-
----
-
 ## Methodology Summary
 
 - **Data Preprocessing**:
@@ -100,6 +58,47 @@ The interactive Tableau dashboard includes:
 
 ---
 
+## Dashboard Preview
+
+The interactive Tableau dashboard includes:
+
+- **Annual Analysis**:
+  - Mean annual rainfall
+  - Rainiest/driest years
+  - Longest wet/dry periods
+
+- **Monthly View**:
+  - Number of rainy days
+  - Monthly extremes and totals
+
+- **Snowfall Tracking**:
+  - Historical snow event comments
+
+- **User Controls**:
+  - Filter by year
+  - Explore trends with dropdowns and charts
+
+> Open `Dashboard_Navarcles.twbx` with **Tableau Desktop Public Edition (v2022.3+)**
+
+---
+
+## Forecasting Summary
+The best-performing model was **Auto-ARIMA**, achieving a test MAE of 29.19 mm.
+
+| Model          | Avg. MAE (CV) |
+|----------------|---------------|
+| **Auto-ARIMA** | **29.35**     |
+| Prophet        | 29.72         |
+| SARIMA         | 32.80         |
+| SARIMAX        | 30.63         |
+| LightGBM       | 30.98         |
+| CatBoost       | ~31.12        |
+| Constant Model | ~31.00        |
+
+> Final test MAE of Auto-ARIMA: **29.19 mm**
+
+---
+
 ## Future Work
 
 - [ ] Add reanalysis or satellite-based weather features
@@ -113,6 +112,9 @@ The interactive Tableau dashboard includes:
 
 This project is intended for **educational and non-commercial use**.  
 Please credit the author and repository if reusing parts of the methodology or data.
-- `Presentation_Rainfall_Navarcles.pdf` – Summary slide deck for presentation
 
-</details>
+---
+
+## Acknowledgments
+
+This project is dedicated to the memory of **Carmel Puig Vilaragut**, who faithfully recorded daily rainfall and snowfall in Navarcles until his passing in 2020. His decades-long commitment to data collection created a rare and invaluable dataset, although handwritten notes from before 1995 were unfortunately lost. Since 2020, our family has proudly continued the tradition to ensure the continuity of this local climate record. We are grateful for his legacy and hope this work honors his efforts and benefits the wider community.
