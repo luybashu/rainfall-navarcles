@@ -96,10 +96,17 @@ The best-performing model was **Auto-ARIMA**, achieving a test MAE of 29.19 mm.
 | SARIMA         | 32.80         |
 | SARIMAX        | 30.63         |
 | LightGBM       | 30.98         |
-| CatBoost       | ~31.12        |
-| Constant Model | ~31.00        |
+| Constant Model | 30.68         |
 
 > Final test MAE of Auto-ARIMA: **29.19 mm**
+
+## Limitations & Model Performance
+
+Forecasting rainfall proved to be particularly challenging due to the **high variability** and **randomness** of precipitation events. While several models were tested — including SARIMA, SARIMAX, Prophet, CatBoost, and LightGBM — none significantly outperformed a simple median model that predicts the median rainfall for each month based on past data.
+
+- **Auto-ARIMA** achieved the best performance (test MAE: 29.19), but still struggled to accurately predict rainfall peaks and troughs.
+- **External features** such as temperature and insolation, when added to SARIMAX models, did not improve forecast accuracy.
+- **Machine learning models** (LightGBM, CatBoost) did not outperform traditional time series models, likely due to their limited ability to capture temporal dependencies in the data.
 
 ---
 
