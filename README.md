@@ -136,13 +136,6 @@ The interactive Tableau dashboard includes:
 
 ---
 
-## Contact
-
-**Liubov Shubina**  
-[Add contact info or LinkedIn if desired]
-
----
-
 ## License
 
 This project is intended for **educational and non-commercial use**.  
