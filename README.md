@@ -60,7 +60,11 @@ pip install -r requirements.txt
 
 ## Dashboard Preview
 
-The interactive Tableau dashboard includes:
+The interactive dashboard allows users to explore 30 years of rainfall and snowfall data in Navarcles by year and month.
+
+![Dashboard Preview](./dashboard_preview.png)
+
+Dashboard includes:
 
 - **Annual Analysis**:
   - Mean annual rainfall
